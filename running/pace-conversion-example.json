@@ -1,0 +1,13 @@
+{
+  "display": "6:00-6:30 min/km",
+  "slow_seconds_per_km": 390,
+  "fast_seconds_per_km": 360,
+  "candidate_api_fields": {
+    "targetType": {
+      "workoutTargetTypeId": 6
+    },
+    "targetValueOne": 2.5641025641025643,
+    "targetValueTwo": 2.7777777777777777
+  },
+  "status": "conversion_checked; server_and_watch_not_tested"
+}

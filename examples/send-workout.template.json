@@ -1,0 +1,10 @@
+[
+  {
+    "deviceId": "<DEVICE_UNIT_ID>",
+    "fileType": "FIT",
+    "messageType": "workouts",
+    "messageUrl": "workout-service/workout/FIT/<WORKOUT_ID>",
+    "messageName": "REA - Easy Run 20 min",
+    "priority": "1"
+  }
+]

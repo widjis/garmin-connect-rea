@@ -1,0 +1,4153 @@
+{
+  "analysis_date": "2026-10-20",
+  "apk_sha256": "5855bfffee6a1336ffefd6601b6f44e7c0dbff2554dd4b826e40747ee5107ffd",
+  "package": "com.garmin.android.apps.connectmobile",
+  "version": "5.30.1",
+  "version_code": "11657",
+  "rea_evidence_id": "ev_72dee8649034df826a44a7899a42c063a2cc790b1936adae8d52a7d983a79dd6",
+  "rea_operation": "inspect_android_package",
+  "route_declaration_count": 63,
+  "unique_route_literal_count": 59,
+  "model_count": 60,
+  "routes": [
+    {
+      "http_method": "GET",
+      "path_literal": "wellness-service/wellness/bodyBattery/messagingToday",
+      "class_raw": "ax.a",
+      "method": "a",
+      "signature": "i0<a0<e>> a();",
+      "source": "health-stats/sources/ax.a.java",
+      "line": 18,
+      "parameters": [],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "wellness-service/wellness/bodyBattery/events/{calendarDate}",
+      "class_raw": "ax.a",
+      "method": "b",
+      "signature": "i0<a0<List<b>>> b(@s(\"calendarDate\") c calendarDate);",
+      "source": "health-stats/sources/ax.a.java",
+      "line": 21,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "calendarDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/bodybattery/daily/{startDate}/{endDate}",
+      "class_raw": "ax.a",
+      "method": "c",
+      "signature": "i0<a0<List<bx.f>>> c(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate);",
+      "source": "health-stats/sources/ax.a.java",
+      "line": 24,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/usersummary/mobile/daily/{displayName}",
+      "class_raw": "b22.h",
+      "method": "a",
+      "signature": "i0<a0<UserDailySummaryDTO>> a(@s(\"displayName\") String displayName, @t(\"calendarDate\") String date);",
+      "source": "health-stats/sources/b22.h.java",
+      "line": 16,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "displayName"
+        },
+        {
+          "annotation": "t",
+          "name": "calendarDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/metrics-service/metrics/maxmet/latest/hbase/{date}",
+      "class_raw": "bx1.a",
+      "method": "e",
+      "signature": "i0<a0<j>> e(@i83.s(\"date\") c date, @t(\"sport\") String sport);",
+      "source": "health-stats/sources/bx1.a.java",
+      "line": 36,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "date"
+        },
+        {
+          "annotation": "t",
+          "name": "sport"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/fitnessage-service/fitnessage/v2/{calendarDate}",
+      "class_raw": "bx1.a",
+      "method": "n",
+      "signature": "i0<a0<k>> n(@i83.s(\"calendarDate\") String calendarDate);",
+      "source": "health-stats/sources/bx1.a.java",
+      "line": 63,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "calendarDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/wellness-service/wellness/daily/spo2acclimation/{date}",
+      "class_raw": "com.garmin.android.apps.connectmobile.pulseox.data.a",
+      "method": "a",
+      "signature": "i0<dc1.a> a(@s(\"date\") c date);",
+      "source": "health-stats/sources/com.garmin.android.apps.connectmobile.pulseox.data.a.java",
+      "line": 24,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "date"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/wellness-service/stats/daily/acclimation?",
+      "class_raw": "com.garmin.android.apps.connectmobile.pulseox.data.a",
+      "method": "b",
+      "signature": "i0<nl.a> b(@t(\"fromDate\") c startDate, @t(\"untilDate\") c endDate);",
+      "source": "health-stats/sources/com.garmin.android.apps.connectmobile.pulseox.data.a.java",
+      "line": 27,
+      "parameters": [
+        {
+          "annotation": "t",
+          "name": "fromDate"
+        },
+        {
+          "annotation": "t",
+          "name": "untilDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/wellness-service/wellness/daily/respiration/{date}",
+      "class_raw": "com.garmin.android.apps.connectmobile.respiration.data.d",
+      "method": "a",
+      "signature": "i0<a0<be1.a>> a(@s(\"date\") fz0.f date);",
+      "source": "health-stats/sources/com.garmin.android.apps.connectmobile.respiration.data.d.java",
+      "line": 21,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "date"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/respiration/daily/{startDate}/{endDate}",
+      "class_raw": "com.garmin.android.apps.connectmobile.respiration.data.d",
+      "method": "b",
+      "signature": "i0<a0<List<be1.b>>> b(@s(\"startDate\") fz0.f startDate, @s(\"endDate\") fz0.f endDate);",
+      "source": "health-stats/sources/com.garmin.android.apps.connectmobile.respiration.data.d.java",
+      "line": 24,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "usersummary-service/stats/heartRate/weekly/{endDate}/{numWeeks}",
+      "class_raw": "do0.b",
+      "method": "a",
+      "signature": "i0<a0<List<d>>> a(@s(\"endDate\") c endDate, @s(\"numWeeks\") int numWeeks);",
+      "source": "health-stats/sources/do0.b.java",
+      "line": 16,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "s",
+          "name": "numWeeks"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "usersummary-service/stats/heartRate/daily/{startDate}/{endDate}",
+      "class_raw": "do0.b",
+      "method": "b",
+      "signature": "i0<a0<List<d>>> b(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate);",
+      "source": "health-stats/sources/do0.b.java",
+      "line": 19,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/mobile-gateway/snapshot/timeline/v2/forDate/{date}",
+      "class_raw": "hr0.a",
+      "method": "a",
+      "signature": "i0<a0<String>> a(@s(\"date\") c date);",
+      "source": "health-stats/sources/hr0.a.java",
+      "line": 15,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "date"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/im/weekly/{startDate}/{endDate}",
+      "class_raw": "hr0.a",
+      "method": "b",
+      "signature": "i0<a0<List<ir0.f>>> b(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate);",
+      "source": "health-stats/sources/hr0.a.java",
+      "line": 18,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/wellness-service/stats/hourly/im/{endDate}/{days}",
+      "class_raw": "hr0.a",
+      "method": "c",
+      "signature": "i0<a0<ir0.c>> c(@s(\"endDate\") c date, @s(\"days\") int days);",
+      "source": "health-stats/sources/hr0.a.java",
+      "line": 21,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "s",
+          "name": "days"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/wellness-service/wellness/daily/im/{date}",
+      "class_raw": "hr0.a",
+      "method": "d",
+      "signature": "i0<a0<ir0.a>> d(@s(\"date\") c date);",
+      "source": "health-stats/sources/hr0.a.java",
+      "line": 24,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "date"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/v2/dailysummaries",
+      "class_raw": "hr0.a",
+      "method": "e",
+      "signature": "i0<a0<b22.f>> e(@t(\"startDate\") String startDate, @t(\"endDate\") String endDate);",
+      "source": "health-stats/sources/hr0.a.java",
+      "line": 27,
+      "parameters": [
+        {
+          "annotation": "t",
+          "name": "startDate"
+        },
+        {
+          "annotation": "t",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/im/daily/{startDate}/{endDate}",
+      "class_raw": "hr0.a",
+      "method": "f",
+      "signature": "i0<a0<List<ir0.f>>> f(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate);",
+      "source": "health-stats/sources/hr0.a.java",
+      "line": 30,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/sleep-service/sleep/dailySleepData",
+      "class_raw": "im1.a",
+      "method": "c",
+      "signature": "i0<a0<c>> c(@t(\"date\") fz0.c date, @t(\"nonSleepBufferMinutes\") int nonSleepBufferMinutes);",
+      "source": "health-stats/sources/im1.a.java",
+      "line": 22,
+      "parameters": [
+        {
+          "annotation": "t",
+          "name": "date"
+        },
+        {
+          "annotation": "t",
+          "name": "nonSleepBufferMinutes"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/sleep-service/stats/sleep/daily/{startDate}/{endDate}",
+      "class_raw": "im1.a",
+      "method": "e",
+      "signature": "i0<a0<b>> e(@s(\"startDate\") fz0.c startDate, @s(\"endDate\") fz0.c endDate);",
+      "source": "health-stats/sources/im1.a.java",
+      "line": 25,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/sleep-service/stats/sleep/weekly/{endDate}/{weekCount}",
+      "class_raw": "im1.a",
+      "method": "m",
+      "signature": "i0<a0<mm1.f>> m(@s(\"endDate\") fz0.c endDate, @s(\"weekCount\") int weekCount);",
+      "source": "health-stats/sources/im1.a.java",
+      "line": 51,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "s",
+          "name": "weekCount"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "usersummary-service/stats/hydration/daily/{startDate}/{endDate}",
+      "class_raw": "ip0.a",
+      "method": "c",
+      "signature": "i0<a0<List<jp0.a>>> c(@s(\"startDate\") String startDate, @s(\"endDate\") String endDate);",
+      "source": "health-stats/sources/ip0.a.java",
+      "line": 23,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/usersummary/hydration/allData/{date}",
+      "class_raw": "ip0.a",
+      "method": "d",
+      "signature": "i0<a0<b>> d(@s(\"date\") c date);",
+      "source": "health-stats/sources/ip0.a.java",
+      "line": 26,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "date"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "usersummary-service/stats/hydration/weekly/{endDate}/{numOfWeeks}",
+      "class_raw": "ip0.a",
+      "method": "e",
+      "signature": "i0<a0<List<jp0.f>>> e(@s(\"endDate\") String endDate, @s(\"numOfWeeks\") int numOfWeeks);",
+      "source": "health-stats/sources/ip0.a.java",
+      "line": 29,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "s",
+          "name": "numOfWeeks"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "wellness-service/wellness/dailySummaryChart",
+      "class_raw": "iq1.a",
+      "method": "a",
+      "signature": "i0<a0<List<jq1.f>>> a(@t(\"date\") c date);",
+      "source": "health-stats/sources/iq1.a.java",
+      "line": 18,
+      "parameters": [
+        {
+          "annotation": "t",
+          "name": "date"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/daily/{startDate}/{endDate}?statsType=STEPS",
+      "class_raw": "iq1.a",
+      "method": "b",
+      "signature": "i0<a0<jq1.a>> b(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate, @t(\"currentDate\") c currentDate);",
+      "source": "health-stats/sources/iq1.a.java",
+      "line": 21,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "t",
+          "name": "currentDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/steps/monthly/{startDate}/{numOfMonths}",
+      "class_raw": "iq1.a",
+      "method": "c",
+      "signature": "i0<a0<List<j>>> c(@s(\"startDate\") c startDate, @s(\"numOfMonths\") int numOfMonths);",
+      "source": "health-stats/sources/iq1.a.java",
+      "line": 24,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "numOfMonths"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "mobile-gateway/usersummary/daily/{date}",
+      "class_raw": "iq1.a",
+      "method": "d",
+      "signature": "i0<a0<jq1.c>> d(@s(\"date\") c date);",
+      "source": "health-stats/sources/iq1.a.java",
+      "line": 27,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "date"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/steps/weekly/{endDate}/{numOfWeeks}",
+      "class_raw": "iq1.a",
+      "method": "e",
+      "signature": "i0<a0<List<j>>> e(@s(\"endDate\") c endDate, @s(\"numOfWeeks\") int numOfWeeks);",
+      "source": "health-stats/sources/iq1.a.java",
+      "line": 30,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "s",
+          "name": "numOfWeeks"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/stress/daily/{startDate}/{endDate}",
+      "class_raw": "jr1.a",
+      "method": "b",
+      "signature": "i0<a0<List<kr1.a>>> b(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate);",
+      "source": "health-stats/sources/jr1.a.java",
+      "line": 16,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/stress/weekly/{endDate}/{numOfWeeks}",
+      "class_raw": "jr1.a",
+      "method": "c",
+      "signature": "i0<a0<List<kr1.c>>> c(@s(\"endDate\") c endDate, @s(\"numOfWeeks\") int numOfWeeks);",
+      "source": "health-stats/sources/jr1.a.java",
+      "line": 19,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "s",
+          "name": "numOfWeeks"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "bloodpressure-service/bloodpressure/category/level",
+      "class_raw": "lw.a",
+      "method": "a",
+      "signature": "d<String> a();",
+      "source": "health-stats/sources/lw.a.java",
+      "line": 23,
+      "parameters": [],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "bloodpressure-service/bloodpressure/weeklyRange/{startDate}\\u200b/{endDate}",
+      "class_raw": "lw.a",
+      "method": "b",
+      "signature": "i0<h> b(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate);",
+      "source": "health-stats/sources/lw.a.java",
+      "line": 26,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": true
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "bloodpressure-service/bloodpressure/dayview/{calendarDate}",
+      "class_raw": "lw.a",
+      "method": "f",
+      "signature": "i0<kw.o> f(@s(\"calendarDate\") c calendarDate);",
+      "source": "health-stats/sources/lw.a.java",
+      "line": 38,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "calendarDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "bloodpressure-service/bloodpressure/range/{startDate}/{endDate}",
+      "class_raw": "lw.a",
+      "method": "g",
+      "signature": "i0<h> g(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate);",
+      "source": "health-stats/sources/lw.a.java",
+      "line": 41,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "bloodpressure-service/bloodpressure/daily/last/{startDate}/{endDate}",
+      "class_raw": "lw.a",
+      "method": "h",
+      "signature": "i0<a0<List<pw.a>>> h(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate);",
+      "source": "health-stats/sources/lw.a.java",
+      "line": 44,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "weight-service/weight/dayview/{date}",
+      "class_raw": "m42.a",
+      "method": "b",
+      "signature": "i0<a0<l42.a>> b(@s(\"date\") c date);",
+      "source": "health-stats/sources/m42.a.java",
+      "line": 27,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "date"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "weight-service/weight/weeklyRange/{startDate}/{endDate}",
+      "class_raw": "m42.a",
+      "method": "c",
+      "signature": "i0<a0<e>> c(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate);",
+      "source": "health-stats/sources/m42.a.java",
+      "line": 30,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "weight-service/weight/latest",
+      "class_raw": "m42.a",
+      "method": "d",
+      "signature": "i0<a0<h>> d(@t(\"date\") c date, @t(\"ignorePriority\") boolean ignorePriority);",
+      "source": "health-stats/sources/m42.a.java",
+      "line": 33,
+      "parameters": [
+        {
+          "annotation": "t",
+          "name": "date"
+        },
+        {
+          "annotation": "t",
+          "name": "ignorePriority"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "weight-service/weight/range/{startDate}/{endDate}",
+      "class_raw": "m42.a",
+      "method": "f",
+      "signature": "i0<a0<k>> f(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate);",
+      "source": "health-stats/sources/m42.a.java",
+      "line": 39,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "weight-service/weight/checkAllRecentWeightsFromIndexS1/{calendarDate}",
+      "class_raw": "m42.a",
+      "method": "h",
+      "signature": "Object h(@s(\"calendarDate\") c cVar, d<? super a0<Boolean>> dVar);",
+      "source": "health-stats/sources/m42.a.java",
+      "line": 45,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "calendarDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "weight-service/weight/checkWeightHistory",
+      "class_raw": "m42.a",
+      "method": "i",
+      "signature": "Object i(@t(\"minWeight\") Integer num, @t(\"maxWeight\") Integer num2, @t(\"startDate\") String str, @t(\"endDate\") String str2, @t(\"hasBodyMetrics\") Boolean bool, d<? super a0<Boolean>> dVar);",
+      "source": "health-stats/sources/m42.a.java",
+      "line": 48,
+      "parameters": [
+        {
+          "annotation": "t",
+          "name": "minWeight"
+        },
+        {
+          "annotation": "t",
+          "name": "maxWeight"
+        },
+        {
+          "annotation": "t",
+          "name": "startDate"
+        },
+        {
+          "annotation": "t",
+          "name": "endDate"
+        },
+        {
+          "annotation": "t",
+          "name": "hasBodyMetrics"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/daily/{startDate}/{endDate}?statsType=CALORIES",
+      "class_raw": "my.a",
+      "method": "a",
+      "signature": "Object a(@s(\"startDate\") c cVar, @s(\"endDate\") c cVar2, @t(\"currentDate\") c cVar3, d<? super a0<b>> dVar);",
+      "source": "health-stats/sources/my.a.java",
+      "line": 19,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "t",
+          "name": "currentDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/calories/weekly/{endDate}/{numWeeks}",
+      "class_raw": "my.a",
+      "method": "b",
+      "signature": "Object b(@s(\"endDate\") c cVar, @s(\"numWeeks\") int i, d<? super a0<List<e>>> dVar);",
+      "source": "health-stats/sources/my.a.java",
+      "line": 22,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "s",
+          "name": "numWeeks"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/activitylist-service/activities/list/{displayName}",
+      "class_raw": "nz1.a",
+      "method": "a",
+      "signature": "Object a(@s(\"displayName\") String str, @t(\"activityTypeId\") String str2, @t(\"startTimestampLocal\") String str3, @t(\"endTimestampLocal\") String str4, d<? super a0<c>> dVar);",
+      "source": "health-stats/sources/nz1.a.java",
+      "line": 19,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "displayName"
+        },
+        {
+          "annotation": "t",
+          "name": "activityTypeId"
+        },
+        {
+          "annotation": "t",
+          "name": "startTimestampLocal"
+        },
+        {
+          "annotation": "t",
+          "name": "endTimestampLocal"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/stress/daily/{startDate}/{endDate}",
+      "class_raw": "nz1.a",
+      "method": "b",
+      "signature": "i0<a0<List<kr1.a>>> b(@s(\"startDate\") fz0.c startDate, @s(\"endDate\") fz0.c endDate);",
+      "source": "health-stats/sources/nz1.a.java",
+      "line": 22,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/sleep-service/sleep/dailySleepData",
+      "class_raw": "nz1.a",
+      "method": "c",
+      "signature": "i0<a0<km1.c>> c(@t(\"date\") fz0.c date, @t(\"nonSleepBufferMinutes\") int nonSleepBufferMinutes);",
+      "source": "health-stats/sources/nz1.a.java",
+      "line": 25,
+      "parameters": [
+        {
+          "annotation": "t",
+          "name": "date"
+        },
+        {
+          "annotation": "t",
+          "name": "nonSleepBufferMinutes"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "metrics-service/metrics/trainingreadiness/{calendarDate}",
+      "class_raw": "nz1.a",
+      "method": "d",
+      "signature": "i0<a0<List<b>>> d(@s(\"calendarDate\") fz0.c date);",
+      "source": "health-stats/sources/nz1.a.java",
+      "line": 28,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "calendarDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/sleep-service/stats/sleep/daily/{startDate}/{endDate}",
+      "class_raw": "nz1.a",
+      "method": "e",
+      "signature": "i0<a0<mm1.b>> e(@s(\"startDate\") fz0.c startDate, @s(\"endDate\") fz0.c endDate);",
+      "source": "health-stats/sources/nz1.a.java",
+      "line": 31,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "hrv-service/hrv/{calendarDate}",
+      "class_raw": "nz1.a",
+      "method": "f",
+      "signature": "i0<a0<i41.b>> f(@s(\"calendarDate\") fz0.c date);",
+      "source": "health-stats/sources/nz1.a.java",
+      "line": 34,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "calendarDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/mobile-gateway/usersummary/trainingstatus/weekly/{startDate}/{endDate}",
+      "class_raw": "p61.a",
+      "method": "a",
+      "signature": "i0<a0<TrainingStatusReportDTO>> a(@s(\"startDate\") String startDate, @s(\"endDate\") String endDate);",
+      "source": "health-stats/sources/p61.a.java",
+      "line": 18,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/metrics-service/metrics/manualstresslevel/daily/{startDate}/{endDate}",
+      "class_raw": "p61.a",
+      "method": "b",
+      "signature": "i0<a0<StressScoresSummaryDTO>> b(@s(\"startDate\") String startDate, @s(\"endDate\") String endDate);",
+      "source": "health-stats/sources/p61.a.java",
+      "line": 21,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/metrics-service/metrics/heataltitudeacclimation/daily/{startDate}/{endDate}",
+      "class_raw": "p61.a",
+      "method": "c",
+      "signature": "i0<a0<List<e>>> c(@s(\"startDate\") String startDate, @s(\"endDate\") String endDate);",
+      "source": "health-stats/sources/p61.a.java",
+      "line": 24,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/mobile-gateway/usersummary/trainingstatus/monthly/{startDate}/{endDate}",
+      "class_raw": "p61.a",
+      "method": "d",
+      "signature": "i0<a0<TrainingStatusReportDTO>> d(@s(\"startDate\") String startDate, @s(\"endDate\") String endDate);",
+      "source": "health-stats/sources/p61.a.java",
+      "line": 27,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/mobile-gateway/usersummary/trainingstatus/latest/{startDate}",
+      "class_raw": "p61.a",
+      "method": "e",
+      "signature": "i0<a0<CurrentTrainingStatusDTO>> e(@s(\"startDate\") String startDate);",
+      "source": "health-stats/sources/p61.a.java",
+      "line": 30,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/floors/daily/{startDate}/{endDate}",
+      "class_raw": "rh0.a",
+      "method": "a",
+      "signature": "i0<a0<List<b>>> a(@s(\"startDate\") c startDate, @s(\"endDate\") c endDate);",
+      "source": "health-stats/sources/rh0.a.java",
+      "line": 15,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "wellness-service/wellness/floorsChartData/daily/{calendarDate}",
+      "class_raw": "rh0.a",
+      "method": "b",
+      "signature": "i0<a0<sh0.c>> b(@s(\"calendarDate\") c date);",
+      "source": "health-stats/sources/rh0.a.java",
+      "line": 18,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "calendarDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/usersummary-service/stats/floors/weekly/{endDate}/{numOfWeeks}",
+      "class_raw": "rh0.a",
+      "method": "c",
+      "signature": "i0<a0<List<sh0.f>>> c(@s(\"endDate\") c endDate, @s(\"numOfWeeks\") int numOfWeeks);",
+      "source": "health-stats/sources/rh0.a.java",
+      "line": 21,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "s",
+          "name": "numOfWeeks"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/metrics-service/metrics/maxmet/weekly/{startDate}/{endDate}",
+      "class_raw": "s32.a",
+      "method": "a",
+      "signature": "Object a(@s(\"startDate\") c cVar, @s(\"endDate\") c cVar2, @t(\"sport\") List<String> list, d<? super a0<List<p>>> dVar);",
+      "source": "health-stats/sources/s32.a.java",
+      "line": 18,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "t",
+          "name": "sport"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/metrics-service/metrics/maxmet/latest/{startDate}",
+      "class_raw": "s32.a",
+      "method": "b",
+      "signature": "Object b(@s(\"startDate\") c cVar, @t(\"sport\") List<String> list, d<? super a0<p>> dVar);",
+      "source": "health-stats/sources/s32.a.java",
+      "line": 21,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "t",
+          "name": "sport"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "/metrics-service/metrics/maxmet/daily/{startDate}/{endDate}",
+      "class_raw": "s32.a",
+      "method": "c",
+      "signature": "Object c(@s(\"startDate\") c cVar, @s(\"endDate\") c cVar2, @t(\"sport\") List<String> list, d<? super a0<List<p>>> dVar);",
+      "source": "health-stats/sources/s32.a.java",
+      "line": 24,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "startDate"
+        },
+        {
+          "annotation": "s",
+          "name": "endDate"
+        },
+        {
+          "annotation": "t",
+          "name": "sport"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "hrv-service/hrv/daily/{fromDate}/{toDate}",
+      "class_raw": "v31.a",
+      "method": "a",
+      "signature": "i0<a0<e>> a(@s(\"fromDate\") c fromDate, @s(\"toDate\") c toDate);",
+      "source": "health-stats/sources/v31.a.java",
+      "line": 16,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "fromDate"
+        },
+        {
+          "annotation": "s",
+          "name": "toDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    },
+    {
+      "http_method": "GET",
+      "path_literal": "hrv-service/hrv/{calendarDate}",
+      "class_raw": "v31.a",
+      "method": "d",
+      "signature": "i0<a0<b>> d(@s(\"calendarDate\") c date);",
+      "source": "health-stats/sources/v31.a.java",
+      "line": 19,
+      "parameters": [
+        {
+          "annotation": "s",
+          "name": "calendarDate"
+        }
+      ],
+      "confidence": "static annotation; not live tested",
+      "unsafe_literal": false
+    }
+  ],
+  "models": [
+    {
+      "class_raw": "b22.a",
+      "source": "health-stats/sources/b22.a.java",
+      "fields": [
+        {
+          "name": "goal",
+          "serializer_optional": true,
+          "line": 41,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "moderate",
+          "serializer_optional": true,
+          "line": 42,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "vigorous",
+          "serializer_optional": true,
+          "line": 43,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "b22.b",
+      "source": "health-stats/sources/b22.b.java",
+      "fields": [
+        {
+          "name": "steps",
+          "serializer_optional": true,
+          "line": 36,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "b22.c",
+      "source": "health-stats/sources/b22.c.java",
+      "fields": [
+        {
+          "name": "goal",
+          "serializer_optional": true,
+          "line": 37,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "value",
+          "serializer_optional": true,
+          "line": 38,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "b22.d",
+      "source": "health-stats/sources/b22.d.java",
+      "fields": [
+        {
+          "annotation": "\"calories\"",
+          "declaration": "private final c calories;",
+          "line": 16,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"movement\"",
+          "declaration": "private final i movement;",
+          "line": 20,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "b22.e",
+      "source": "health-stats/sources/b22.e.java",
+      "fields": [
+        {
+          "annotation": "\"data\"",
+          "declaration": "private final d data;",
+          "line": 14,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "b22.f",
+      "source": "health-stats/sources/b22.f.java",
+      "fields": [
+        {
+          "name": "data",
+          "serializer_optional": false,
+          "line": 48,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "b22.g",
+      "source": "health-stats/sources/b22.g.java",
+      "fields": [
+        {
+          "name": "uuid",
+          "serializer_optional": false,
+          "line": 44,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "userProfilePk",
+          "serializer_optional": false,
+          "line": 45,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "calendarDate",
+          "serializer_optional": false,
+          "line": 46,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "source",
+          "serializer_optional": false,
+          "line": 47,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "intensityMinutes",
+          "serializer_optional": true,
+          "line": 48,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "movement",
+          "serializer_optional": true,
+          "line": 49,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "bx.f",
+      "source": "health-stats/sources/bx.f.java",
+      "fields": [
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private final String calendarDate;",
+          "line": 18,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"values\"",
+          "declaration": "private final i values;",
+          "line": 22,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "bx.i",
+      "source": "health-stats/sources/bx.i.java",
+      "fields": [
+        {
+          "annotation": "alternate = {\"avgDailyLowBodyBattery\"}, value = \"lowBodyBattery\"",
+          "declaration": "private final Integer lowBodyBattery;",
+          "line": 18,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "alternate = {\"avgDailyHighBodyBattery\"}, value = \"highBodyBattery\"",
+          "declaration": "private final Integer highBodyBattery;",
+          "line": 22,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "co0.d",
+      "source": "health-stats/sources/co0.d.java",
+      "fields": [
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private final String _calendarDate;",
+          "line": 19,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"values\"",
+          "declaration": "private final b values;",
+          "line": 23,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"abnormalHRAlertCount\"",
+          "declaration": "private final Integer abnormalHRAlertCount;",
+          "line": 112,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "alternate = {\"avgRestingHR\"}, value = \"restingHR\"",
+          "declaration": "private final Integer restingHeartRate;",
+          "line": 116,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"wellnessMaxAvgHR\"",
+          "declaration": "private final Integer maxHeartRate;",
+          "line": 120,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "dc1.a",
+      "source": "health-stats/sources/dc1.a.java",
+      "fields": [
+        {
+          "annotation": "\"monitoringEnvironmentValues\"",
+          "declaration": "private Object[][] monitoringEnvironmentValuesArray;",
+          "line": 25,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"userProfilePK\"",
+          "declaration": "private long userProfilePK;",
+          "line": 29,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private String calendarDate;",
+          "line": 33,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"startTimestampGMT\"",
+          "declaration": "private String startTimestampGMT;",
+          "line": 37,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"endTimestampGMT\"",
+          "declaration": "private String endTimestampGMT;",
+          "line": 41,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"startTimestampLocal\"",
+          "declaration": "private String startTimestampLocal;",
+          "line": 45,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"endTimestampLocal\"",
+          "declaration": "private String endTimestampLocal;",
+          "line": 49,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepStartTimestampGMT\"",
+          "declaration": "private String sleepStartTimestampGMT;",
+          "line": 53,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepEndTimestampGMT\"",
+          "declaration": "private String sleepEndTimestampGMT;",
+          "line": 57,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepStartTimestampLocal\"",
+          "declaration": "private String sleepStartTimestampLocal;",
+          "line": 61,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepEndTimestampLocal\"",
+          "declaration": "private String sleepEndTimestampLocal;",
+          "line": 65,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"tomorrowSleepStartTimestampGMT\"",
+          "declaration": "private String tomorrowSleepStartTimestampGMT;",
+          "line": 69,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"tomorrowSleepEndTimestampGMT\"",
+          "declaration": "private String tomorrowSleepEndTimestampGMT;",
+          "line": 73,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"tomorrowSleepStartTimestampLocal\"",
+          "declaration": "private String tomorrowSleepStartTimestampLocal;",
+          "line": 77,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"tomorrowSleepEndTimestampLocal\"",
+          "declaration": "private String tomorrowSleepEndTimestampLocal;",
+          "line": 81,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"averageSpO2\"",
+          "declaration": "private Double averageSpO2;",
+          "line": 85,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"lowestSpO2\"",
+          "declaration": "private Double lowestSpO2;",
+          "line": 89,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"lastSevenDaysAvgSpO2\"",
+          "declaration": "private Double lastSevenDaysAvgSpO2;",
+          "line": 93,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"latestSpO2\"",
+          "declaration": "private Double latestSpO2;",
+          "line": 97,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"latestSpO2TimestampGMT\"",
+          "declaration": "private String latestSpO2TimestampGMT;",
+          "line": 101,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"latestSpO2TimestampLocal\"",
+          "declaration": "private String latestSpO2TimestampLocal;",
+          "line": 105,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"avgSleepSpO2\"",
+          "declaration": "private Double avgSleepSpO2;",
+          "line": 109,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"avgTomorrowSleepSpO2\"",
+          "declaration": "private Double avgTomorrowSleepSpO2;",
+          "line": 113,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"spO2SingleValues\"",
+          "declaration": "private Object[][] spO2SingleValuesArray;",
+          "line": 117,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"spO2HourlyAverages\"",
+          "declaration": "private Object[][] spO2HourlyAveragesArray;",
+          "line": 121,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "i41.a",
+      "source": "health-stats/sources/i41.a.java",
+      "fields": [
+        {
+          "annotation": "\"lowUpper\"",
+          "declaration": "private Integer lowUpper;",
+          "line": 22,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"balancedLow\"",
+          "declaration": "private Integer balancedLow;",
+          "line": 26,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"balancedUpper\"",
+          "declaration": "private Integer balancedUpper;",
+          "line": 30,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"markerValue\"",
+          "declaration": "private Double markerValue;",
+          "line": 34,
+          "kind": "Gson wire name"
+        },
+        {
+          "name": "lowUpper",
+          "serializer_optional": true,
+          "line": 52,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "balancedLow",
+          "serializer_optional": true,
+          "line": 53,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "balancedUpper",
+          "serializer_optional": true,
+          "line": 54,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "markerValue",
+          "serializer_optional": true,
+          "line": 55,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "i41.b",
+      "source": "health-stats/sources/i41.b.java",
+      "fields": [
+        {
+          "annotation": "\"userProfilePk\"",
+          "declaration": "private String userProfilePk;",
+          "line": 21,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"hrvSummary\"",
+          "declaration": "private f hrvSummary;",
+          "line": 25,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"hrvReadings\"",
+          "declaration": "private List<c> hrvReadings;",
+          "line": 29,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"startTimestampGMT\"",
+          "declaration": "private String startTimestampGMT;",
+          "line": 33,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"endTimestampGMT\"",
+          "declaration": "private String endTimestampGMT;",
+          "line": 37,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"startTimestampLocal\"",
+          "declaration": "private String startTimestampLocal;",
+          "line": 41,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"endTimestampLocal\"",
+          "declaration": "private String endTimestampLocal;",
+          "line": 45,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepStartTimestampGMT\"",
+          "declaration": "private String sleepStartTimestampGMT;",
+          "line": 49,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepEndTimestampGMT\"",
+          "declaration": "private String sleepEndTimestampGMT;",
+          "line": 53,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepStartTimestampLocal\"",
+          "declaration": "private String sleepStartTimestampLocal;",
+          "line": 57,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepEndTimestampLocal\"",
+          "declaration": "private String sleepEndTimestampLocal;",
+          "line": 61,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "i41.c",
+      "source": "health-stats/sources/i41.c.java",
+      "fields": [
+        {
+          "annotation": "\"hrvValue\"",
+          "declaration": "private int hrvValue;",
+          "line": 17,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"readingTimeGMT\"",
+          "declaration": "private String readingTimeGMT;",
+          "line": 21,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"readingTimeLocal\"",
+          "declaration": "private String readingTimeLocal;",
+          "line": 25,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "i41.e",
+      "source": "health-stats/sources/i41.e.java",
+      "fields": [
+        {
+          "annotation": "\"hrvSummaries\"",
+          "declaration": "private List<f> hrvSummaries;",
+          "line": 23,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "i41.f",
+      "source": "health-stats/sources/i41.f.java",
+      "fields": [
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private String calendarDate;",
+          "line": 28,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"weeklyAvg\"",
+          "declaration": "private Integer weeklyAvg;",
+          "line": 32,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"lastNightAvg\"",
+          "declaration": "private Integer lastNightAvg;",
+          "line": 36,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"lastNight5MinHigh\"",
+          "declaration": "private Integer lastNight5MinHigh;",
+          "line": 40,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"baseline\"",
+          "declaration": "private i41.a baseline;",
+          "line": 44,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"status\"",
+          "declaration": "private String status;",
+          "line": 48,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"feedbackPhrase\"",
+          "declaration": "private String feedbackPhrase;",
+          "line": 52,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"createTimeStamp\"",
+          "declaration": "private String createTimeStamp;",
+          "line": 56,
+          "kind": "Gson wire name"
+        },
+        {
+          "name": "calendarDate",
+          "serializer_optional": true,
+          "line": 74,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "weeklyAvg",
+          "serializer_optional": true,
+          "line": 75,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "lastNightAvg",
+          "serializer_optional": true,
+          "line": 76,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "lastNight5MinHigh",
+          "serializer_optional": true,
+          "line": 77,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "baseline",
+          "serializer_optional": true,
+          "line": 78,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "status",
+          "serializer_optional": true,
+          "line": 79,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "feedbackPhrase",
+          "serializer_optional": true,
+          "line": 80,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "createTimeStamp",
+          "serializer_optional": true,
+          "line": 81,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "jp0.a",
+      "source": "health-stats/sources/jp0.a.java",
+      "fields": [
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private final String calendarDate;",
+          "line": 20,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"valueInML\"",
+          "declaration": "private final Double valueInML;",
+          "line": 24,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"goalInML\"",
+          "declaration": "private final Double goalInML;",
+          "line": 28,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "jp0.b",
+      "source": "health-stats/sources/jp0.b.java",
+      "fields": [
+        {
+          "annotation": "\"userId\"",
+          "declaration": "private Integer userId;",
+          "line": 29,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private String calendarDate;",
+          "line": 33,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"lastEntryTimestampLocal\"",
+          "declaration": "private String lastEntryTimestampLocal;",
+          "line": 37,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"valueInML\"",
+          "declaration": "private Double valueInML;",
+          "line": 41,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"goalInML\"",
+          "declaration": "private Double goalInML;",
+          "line": 45,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sweatLossInML\"",
+          "declaration": "private Double sweatLossInML;",
+          "line": 49,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"activityIntakeInML\"",
+          "declaration": "private Double activityIntakeInML;",
+          "line": 53,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"baseGoalInML\"",
+          "declaration": "private Double baseGoalInML;",
+          "line": 57,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"hydrationMeasurementUnit\"",
+          "declaration": "private String hydrationMeasurementUnit;",
+          "line": 61,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"hydrationAutoGoalEnabled\"",
+          "declaration": "private Boolean hydrationAutoGoalEnabled;",
+          "line": 65,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"hydrationContainers\"",
+          "declaration": "private List<op0.a> hydrationContainers;",
+          "line": 69,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "jq1.a",
+      "source": "health-stats/sources/jq1.a.java",
+      "fields": [
+        {
+          "name": "totalStepsAverage",
+          "serializer_optional": true,
+          "line": 126,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "totalStepsWeeklyAverage",
+          "serializer_optional": true,
+          "line": 127,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "jq1.b",
+      "source": "health-stats/sources/jq1.b.java",
+      "fields": [
+        {
+          "name": "userProfileId",
+          "serializer_optional": true,
+          "line": 46,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "calendarDate",
+          "serializer_optional": true,
+          "line": 47,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "totalSteps",
+          "serializer_optional": true,
+          "line": 48,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "totalKilocalories",
+          "serializer_optional": true,
+          "line": 49,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "wellnessDistanceMeters",
+          "serializer_optional": true,
+          "line": 50,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "dailyStepGoal",
+          "serializer_optional": true,
+          "line": 51,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "wellnessStartTimeGmt",
+          "serializer_optional": true,
+          "line": 52,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "wellnessStartTimeLocal",
+          "serializer_optional": true,
+          "line": 53,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "wellnessEndTimeGmt",
+          "serializer_optional": true,
+          "line": 54,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "wellnessEndTimeLocal",
+          "serializer_optional": true,
+          "line": 55,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "jq1.e",
+      "source": "health-stats/sources/jq1.e.java",
+      "fields": [
+        {
+          "name": "totalSteps",
+          "serializer_optional": true,
+          "line": 114,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "totalDistance",
+          "serializer_optional": true,
+          "line": 115,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "stepGoal",
+          "serializer_optional": true,
+          "line": 116,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "jq1.j",
+      "source": "health-stats/sources/jq1.j.java",
+      "fields": [
+        {
+          "name": "totalSteps",
+          "serializer_optional": true,
+          "line": 114,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "wellnessDataDaysCount",
+          "serializer_optional": true,
+          "line": 115,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "totalDistance",
+          "serializer_optional": true,
+          "line": 116,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "jq1.k",
+      "source": "health-stats/sources/jq1.k.java",
+      "fields": [
+        {
+          "name": "payload",
+          "serializer_optional": true,
+          "line": 33,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "km1.a",
+      "source": "health-stats/sources/km1.a.java",
+      "fields": [
+        {
+          "annotation": "\"endGMT\"",
+          "declaration": "private long endGMT;",
+          "line": 16,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"startGMT\"",
+          "declaration": "private long startGMT;",
+          "line": 20,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"value\"",
+          "declaration": "private Integer value;",
+          "line": 24,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "km1.a0",
+      "source": "health-stats/sources/km1.a0.java",
+      "fields": [
+        {
+          "annotation": "\"version\"",
+          "declaration": "private final long version;",
+          "line": 17,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"userProfilePK\"",
+          "declaration": "private final long userProfilePk;",
+          "line": 21,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private final String calendarDate;",
+          "line": 25,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"deviceId\"",
+          "declaration": "private final long deviceId;",
+          "line": 29,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"timestampGmt\"",
+          "declaration": "private final String timestampGmt;",
+          "line": 33,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"baseline\"",
+          "declaration": "private final Integer baseline;",
+          "line": 37,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"actual\"",
+          "declaration": "private final Integer actual;",
+          "line": 41,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"feedback\"",
+          "declaration": "private final String feedback;",
+          "line": 45,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"trainingFeedback\"",
+          "declaration": "private final String trainingFeedback;",
+          "line": 49,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepHistoryAdjustment\"",
+          "declaration": "private final String sleepHistoryAdjustment;",
+          "line": 53,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"hrvAdjustment\"",
+          "declaration": "private final String hrvAdjustment;",
+          "line": 57,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"napAdjustment\"",
+          "declaration": "private final String napAdjustment;",
+          "line": 61,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"preferredActivityTracker\"",
+          "declaration": "private final Boolean preferredActivityTracker;",
+          "line": 65,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"displayedForTheDay\"",
+          "declaration": "private final Boolean displayedForTheDay;",
+          "line": 69,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"recommendedBedtimeStartMins\"",
+          "declaration": "private final Integer recommendedBedtimeStartMins;",
+          "line": 73,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"recommendedBedtimeEndMins\"",
+          "declaration": "private final Integer recommendedBedtimeEndMins;",
+          "line": 77,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "km1.b",
+      "source": "health-stats/sources/km1.b.java",
+      "fields": [
+        {
+          "annotation": "\"userProfilePK\"",
+          "declaration": "private final long userProfilePK;",
+          "line": 18,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"deviceId\"",
+          "declaration": "private final long deviceId;",
+          "line": 22,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private final String calendarDate;",
+          "line": 26,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"napTimeSec\"",
+          "declaration": "private final Integer napTimeSec;",
+          "line": 30,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"napStartTimestampGMT\"",
+          "declaration": "private final String napStartTimestampGMT;",
+          "line": 34,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"napEndTimestampGMT\"",
+          "declaration": "private final String napEndTimestampGMT;",
+          "line": 38,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"napFeedback\"",
+          "declaration": "private final String napFeedback;",
+          "line": 42,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"napSource\"",
+          "declaration": "private final Integer napSource;",
+          "line": 46,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"napStartTimeOffset\"",
+          "declaration": "private final Integer napStartTimeOffset;",
+          "line": 50,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"napEndTimeOffset\"",
+          "declaration": "private final Integer napEndTimeOffset;",
+          "line": 54,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "km1.c",
+      "source": "health-stats/sources/km1.c.java",
+      "fields": [
+        {
+          "annotation": "\"skinTempCalibrationDays\"",
+          "declaration": "private Integer skinTempCalibrationDays;",
+          "line": 21,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"dailySleepDTO\"",
+          "declaration": "private v dailySleep;",
+          "line": 25,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepMovement\"",
+          "declaration": "private List<s> sleepMovement;",
+          "line": 29,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepLevels\"",
+          "declaration": "private List<s> sleepLevels;",
+          "line": 33,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"breathingDisruptionData\"",
+          "declaration": "private List<km1.a> breathingVariationsData;",
+          "line": 37,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"restlessMomentsCount\"",
+          "declaration": "private Integer restlessMomentsCount;",
+          "line": 41,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepRestlessMoments\"",
+          "declaration": "private List<z> sleepRestlessMoments;",
+          "line": 45,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"wellnessSpO2SleepSummaryDTO\"",
+          "declaration": "private lm1.c wellnessSpO2SleepSummary;",
+          "line": 49,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"wellnessSpO2EventDTOList\"",
+          "declaration": "private List<lm1.b> wellnessSpO2EventList;",
+          "line": 53,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"wellnessEpochSPO2DataDTOList\"",
+          "declaration": "private List<lm1.a> wellnessEpochSPO2DataList;",
+          "line": 57,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"wellnessEpochRespirationDataDTOList\"",
+          "declaration": "private List<n> wellnessEpochRespirationDataDTOList;",
+          "line": 61,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"wellnessEpochRespirationAveragesList\"",
+          "declaration": "private List<m> wellnessEpochRespirationAveragesList;",
+          "line": 65,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"respirationVersion\"",
+          "declaration": "private Integer respirationVersion;",
+          "line": 69,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepStress\"",
+          "declaration": "private List<z> sleepStressList;",
+          "line": 73,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepHeartRate\"",
+          "declaration": "private List<z> sleepHeartRateList;",
+          "line": 77,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"restingHeartRate\"",
+          "declaration": "private final Integer restingHeartRate;",
+          "line": 81,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepBodyBattery\"",
+          "declaration": "private List<z> sleepBodyBatteryList;",
+          "line": 85,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"bodyBatteryChange\"",
+          "declaration": "private Integer bodyBatteryChange;",
+          "line": 89,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"skinTempDataExist\"",
+          "declaration": "private boolean skinTempDataExist;",
+          "line": 93,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"skinTempData\"",
+          "declaration": "private List<o> skinTempDataList;",
+          "line": 97,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"avgSkinTempDeviationC\"",
+          "declaration": "private Double avgSkinTempDeviationC;",
+          "line": 101,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"avgSkinTempDeviationF\"",
+          "declaration": "private Double avgSkinTempDeviationF;",
+          "line": 105,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"hrvData\"",
+          "declaration": "private List<z> hrvDataList;",
+          "line": 109,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"hrvStatus\"",
+          "declaration": "private String hrvStatus;",
+          "line": 113,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"avgOvernightHrv\"",
+          "declaration": "private Integer avgOvernightHrv;",
+          "line": 117,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "km1.m",
+      "source": "health-stats/sources/km1.m.java",
+      "fields": [
+        {
+          "annotation": "\"epochEndTimestampGmt\"",
+          "declaration": "private long epochEndTimestampGmt;",
+          "line": 16,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"respirationAverageValue\"",
+          "declaration": "private Double respirationAverageValue;",
+          "line": 20,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"respirationHighValue\"",
+          "declaration": "private Double respirationHighValue;",
+          "line": 24,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"respirationLowValue\"",
+          "declaration": "private Double respirationLowValue;",
+          "line": 28,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "km1.n",
+      "source": "health-stats/sources/km1.n.java",
+      "fields": [
+        {
+          "annotation": "\"startTimeGMT\"",
+          "declaration": "private long startTimeGMT;",
+          "line": 16,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"respirationValue\"",
+          "declaration": "private Double respirationValue;",
+          "line": 20,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "km1.o",
+      "source": "health-stats/sources/km1.o.java",
+      "fields": [
+        {
+          "annotation": "\"value\"",
+          "declaration": "private final Double value;",
+          "line": 16,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"startGMT\"",
+          "declaration": "private final Long startGMT;",
+          "line": 20,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"deviationCelsius\"",
+          "declaration": "private final Double deviationCelsius;",
+          "line": 24,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"deviationFahrenheit\"",
+          "declaration": "private final Double deviationFahrenheit;",
+          "line": 28,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "km1.p",
+      "source": "health-stats/sources/km1.p.java",
+      "fields": [
+        {
+          "annotation": "\"userId\"",
+          "declaration": "private final Long userId;",
+          "line": 20,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private final String calendarDate;",
+          "line": 24,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"deviceId\"",
+          "declaration": "private final Long deviceId;",
+          "line": 28,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"isPreferredActivityTracker\"",
+          "declaration": "private final Boolean isPreferredActivityTracker;",
+          "line": 32,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepNeedBaselineMins\"",
+          "declaration": "private final Integer sleepNeedBaselineMins;",
+          "line": 36,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"optimalSleepWindowStartMins\"",
+          "declaration": "private final Integer optimalSleepWindowStartMins;",
+          "line": 40,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"optimalSleepWindowEndMins\"",
+          "declaration": "private final Integer optimalSleepWindowEndMins;",
+          "line": 44,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"status\"",
+          "declaration": "private final String status;",
+          "line": 48,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"optimalSleepWindowMidpointMins\"",
+          "declaration": "private final Integer optimalSleepWindowMidpointMins;",
+          "line": 52,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"lastSleepMidpointMins\"",
+          "declaration": "private final Integer lastSleepMidpointMins;",
+          "line": 56,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "km1.s",
+      "source": "health-stats/sources/km1.s.java",
+      "fields": [
+        {
+          "annotation": "\"activityLevel\"",
+          "declaration": "private double sleepActivityLevel;",
+          "line": 20,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"startGMT\"",
+          "declaration": "private DateTime sleepStartTimestampGMT;",
+          "line": 24,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"endGMT\"",
+          "declaration": "private DateTime sleepEndTimestampGMT;",
+          "line": 29,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "km1.v",
+      "source": "health-stats/sources/km1.v.java",
+      "fields": [
+        {
+          "annotation": "\"highestSpO2Value\"",
+          "declaration": "private Integer highestSpO2Value;",
+          "line": 26,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"averageSpO2HRSleep\"",
+          "declaration": "private Integer averageSpO2HRSleep;",
+          "line": 30,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"avgHeartRate\"",
+          "declaration": "private final Double avgHeartRate;",
+          "line": 34,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"spo2Threshold\"",
+          "declaration": "private Integer spo2Threshold;",
+          "line": 38,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"deviceRemCapable\"",
+          "declaration": "private boolean deviceRemCapable;",
+          "line": 42,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepFromDevice\"",
+          "declaration": "private boolean sleepFromDevice;",
+          "line": 46,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"averageRespirationValue\"",
+          "declaration": "private Double averageRespirationValue;",
+          "line": 50,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepScores\"",
+          "declaration": "private jm1.c sleepScores;",
+          "line": 54,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"lowestRespirationValue\"",
+          "declaration": "private Double lowestRespirationValue;",
+          "line": 58,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"highestRespirationValue\"",
+          "declaration": "private Double highestRespirationValue;",
+          "line": 63,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepNeed\"",
+          "declaration": "private final a0 sleepNeed;",
+          "line": 68,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"nextSleepNeed\"",
+          "declaration": "private final a0 nextSleepNeed;",
+          "line": 72,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"dailyNapDTOS\"",
+          "declaration": "private final List<km1.b> dailyNapDTOS;",
+          "line": 76,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"breathingDisruptionSeverity\"",
+          "declaration": "private final String breathingDisruptionSeverity;",
+          "line": 80,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepAlignment\"",
+          "declaration": "private final p sleepAlignment;",
+          "line": 84,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepScoreFeedback\"",
+          "declaration": "private String sleepScoreFeedback;",
+          "line": 88,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepScoreInsight\"",
+          "declaration": "private String sleepScoreInsight;",
+          "line": 92,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepScorePersonalizedInsight\"",
+          "declaration": "private String sleepScorePersonalizedInsight;",
+          "line": 96,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepVersion\"",
+          "declaration": "private Integer sleepVersion;",
+          "line": 100,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"userNote\"",
+          "declaration": "private String userNote;",
+          "line": 104,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"id\"",
+          "declaration": "private long id;",
+          "line": 108,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"userProfilePK\"",
+          "declaration": "private long userProfilePK;",
+          "line": 112,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private String calendarDate;",
+          "line": 116,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepTimeSeconds\"",
+          "declaration": "private int sleepTimeSeconds;",
+          "line": 120,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"napTimeSeconds\"",
+          "declaration": "private int napTimeSeconds;",
+          "line": 124,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepWindowConfirmed\"",
+          "declaration": "private boolean sleepWindowConfirmed;",
+          "line": 128,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepWindowConfirmationType\"",
+          "declaration": "private String sleepWindowConfirmedType;",
+          "line": 132,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepStartTimestampGMT\"",
+          "declaration": "private long sleepStartTimestampGMT;",
+          "line": 136,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepEndTimestampGMT\"",
+          "declaration": "private long sleepEndTimestampGMT;",
+          "line": 140,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepStartTimestampLocal\"",
+          "declaration": "private long sleepStartTimestampLocal;",
+          "line": 144,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepEndTimestampLocal\"",
+          "declaration": "private long sleepEndTimestampLocal;",
+          "line": 148,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"retro\"",
+          "declaration": "private Boolean retro;",
+          "line": 152,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"autoSleepStartTimestampGMT\"",
+          "declaration": "private Long autoSleepStartTimestampGMT;",
+          "line": 156,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"autoSleepEndTimestampGMT\"",
+          "declaration": "private Long autoSleepEndTimestampGMT;",
+          "line": 160,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepQualityTypePK\"",
+          "declaration": "private String sleepQualityTypePk;",
+          "line": 164,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepResultTypePK\"",
+          "declaration": "private String sleepResultTypePK;",
+          "line": 168,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"unmeasurableSleepSeconds\"",
+          "declaration": "private int unmeasurableSleepSeconds;",
+          "line": 172,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"deepSleepSeconds\"",
+          "declaration": "private int deepSleepSeconds;",
+          "line": 176,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"lightSleepSeconds\"",
+          "declaration": "private int lightSleepSeconds;",
+          "line": 180,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"remSleepSeconds\"",
+          "declaration": "private int remSleepSeconds;",
+          "line": 184,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"awakeSleepSeconds\"",
+          "declaration": "private int awakeSleepSeconds;",
+          "line": 188,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"awakeCount\"",
+          "declaration": "private Integer awakeCount;",
+          "line": 192,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"avgSleepStress\"",
+          "declaration": "private Double avgSleepStress;",
+          "line": 196,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"averageSpO2Value\"",
+          "declaration": "private Integer averageSpO2Value;",
+          "line": 200,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"lowestSpO2Value\"",
+          "declaration": "private Integer lowestSpO2Value;",
+          "line": 204,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "km1.z",
+      "source": "health-stats/sources/km1.z.java",
+      "fields": [
+        {
+          "annotation": "\"value\"",
+          "declaration": "private final int value;",
+          "line": 16,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"startGMT\"",
+          "declaration": "private final long startGMT;",
+          "line": 20,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "kr1.a",
+      "source": "health-stats/sources/kr1.a.java",
+      "fields": [
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private String _calendarDate;",
+          "line": 23,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"values\"",
+          "declaration": "private final b values;",
+          "line": 27,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"highStressDuration\"",
+          "declaration": "private final Integer highStressDuration;",
+          "line": 117,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"lowStressDuration\"",
+          "declaration": "private final Integer lowStressDuration;",
+          "line": 121,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"overallStressLevel\"",
+          "declaration": "private final Integer overallStressLevel;",
+          "line": 125,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"restStressDuration\"",
+          "declaration": "private final Integer restStressDuration;",
+          "line": 129,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"mediumStressDuration\"",
+          "declaration": "private final Integer mediumStressDuration;",
+          "line": 133,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "kw.o",
+      "source": "health-stats/sources/kw.o.java",
+      "fields": [
+        {
+          "annotation": "\"startDate\"",
+          "declaration": "private String startDate;",
+          "line": 23,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"endDate\"",
+          "declaration": "private String endDate;",
+          "line": 27,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"bloodPressureMeasurements\"",
+          "declaration": "private List<pw.a> bloodPressureMeasurements;",
+          "line": 31,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "l42.a",
+      "source": "health-stats/sources/l42.a.java",
+      "fields": [
+        {
+          "annotation": "\"dateWeightList\"",
+          "declaration": "private List<c> dateWeightList;",
+          "line": 22,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"endDate\"",
+          "declaration": "private String endDate;",
+          "line": 26,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"startDate\"",
+          "declaration": "private String startDate;",
+          "line": 30,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"totalAverage\"",
+          "declaration": "private g totalAverage;",
+          "line": 34,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "l42.b",
+      "source": "health-stats/sources/l42.b.java",
+      "fields": [
+        {
+          "annotation": "\"latestWeight\"",
+          "declaration": "private c latestWeight;",
+          "line": 22,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"maxWeight\"",
+          "declaration": "private Double maxWeight;",
+          "line": 26,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"minWeight\"",
+          "declaration": "private Double minWeight;",
+          "line": 30,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"numOfWeightEntries\"",
+          "declaration": "private int numberOfWeightEntries;",
+          "line": 34,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"summaryDate\"",
+          "declaration": "private String summaryDate;",
+          "line": 38,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "l42.c",
+      "source": "health-stats/sources/l42.c.java",
+      "fields": [
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private final String calendarDate;",
+          "line": 21,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"date\"",
+          "declaration": "private final String date;",
+          "line": 25,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"samplePk\"",
+          "declaration": "private final long samplePk;",
+          "line": 29,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"timestampGMT\"",
+          "declaration": "private final String timestampGmt;",
+          "line": 33,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"weightDelta\"",
+          "declaration": "private final Double weightDelta;",
+          "line": 37,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "l42.e",
+      "source": "health-stats/sources/l42.e.java",
+      "fields": [
+        {
+          "annotation": "\"weeklyWeightSummaries\"",
+          "declaration": "private List<f> weeklyWeightSummaryList;",
+          "line": 20,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"previousWeekAverageDTO\"",
+          "declaration": "private g previousWeekAverageDTO;",
+          "line": 24,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"nextWeekAverageDTO\"",
+          "declaration": "private g nextWeekAverageDTO;",
+          "line": 28,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"weightAverageDTO\"",
+          "declaration": "private g weightAverageDto;",
+          "line": 32,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "l42.f",
+      "source": "health-stats/sources/l42.f.java",
+      "fields": [
+        {
+          "annotation": "\"averageWeight\"",
+          "declaration": "private g weightAverageDto;",
+          "line": 20,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"endDate\"",
+          "declaration": "private String endDate;",
+          "line": 24,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"startDate\"",
+          "declaration": "private String startDate;",
+          "line": 28,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"minWeight\"",
+          "declaration": "private Double minWeight;",
+          "line": 32,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"maxWeight\"",
+          "declaration": "private Double maxWeight;",
+          "line": 36,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"weightDelta\"",
+          "declaration": "private Double weightDelta;",
+          "line": 40,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "l42.g",
+      "source": "health-stats/sources/l42.g.java",
+      "fields": [
+        {
+          "annotation": "\"bmiCount\"",
+          "declaration": "private Integer bmiCount;",
+          "line": 18,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"bodyFatCount\"",
+          "declaration": "private Integer bodyFatCount;",
+          "line": 22,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"bodyWaterCount\"",
+          "declaration": "private Integer bodyWaterCount;",
+          "line": 26,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"boneMassCount\"",
+          "declaration": "private Integer boneMassCount;",
+          "line": 30,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"from\"",
+          "declaration": "private String from;",
+          "line": 34,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"metabolicAgeCount\"",
+          "declaration": "private Integer metabolicAgeCount;",
+          "line": 38,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"muscleMassCount\"",
+          "declaration": "private Integer muscleMassCount;",
+          "line": 42,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"physiqueRatingCount\"",
+          "declaration": "private Integer physiqueRatingCount;",
+          "line": 46,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"until\"",
+          "declaration": "private String until;",
+          "line": 50,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"visceralFatCount\"",
+          "declaration": "private Integer visceralFatCount;",
+          "line": 54,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"weightCount\"",
+          "declaration": "private Integer weightCount;",
+          "line": 58,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "l42.h",
+      "source": "health-stats/sources/l42.h.java",
+      "fields": [
+        {
+          "annotation": "\"caloricIntake\"",
+          "declaration": "private Integer caloricIntake;",
+          "line": 18,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"date\"",
+          "declaration": "private String date;",
+          "line": 22,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"timestampGMT\"",
+          "declaration": "private String timestampGMT;",
+          "line": 26,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"version\"",
+          "declaration": "private Long version;",
+          "line": 30,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "l42.i",
+      "source": "health-stats/sources/l42.i.java",
+      "fields": [
+        {
+          "annotation": "\"bmi\"",
+          "declaration": "private Double bmi;",
+          "line": 17,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"bodyFat\"",
+          "declaration": "private Double bodyFat;",
+          "line": 21,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"date\"",
+          "declaration": "private String date;",
+          "line": 25,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"dateTimestamp\"",
+          "declaration": "private String dateTimestamp;",
+          "line": 29,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"gmtTimestamp\"",
+          "declaration": "private String gmtTimestamp;",
+          "line": 33,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sourceType\"",
+          "declaration": "private String sourceType;",
+          "line": 37,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"unitKey\"",
+          "declaration": "private String unitKey;",
+          "line": 41,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"value\"",
+          "declaration": "private Double value;",
+          "line": 45,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "l42.j",
+      "source": "health-stats/sources/l42.j.java",
+      "fields": [
+        {
+          "annotation": "\"bmi\"",
+          "declaration": "private final Double bmi;",
+          "line": 16,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"bodyFat\"",
+          "declaration": "private final Double bodyFat;",
+          "line": 20,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"bodyWater\"",
+          "declaration": "private final Double bodyWater;",
+          "line": 24,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"boneMass\"",
+          "declaration": "private final Integer boneMass;",
+          "line": 28,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"metabolicAge\"",
+          "declaration": "private final Double metabolicAge;",
+          "line": 32,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"muscleMass\"",
+          "declaration": "private final Integer muscleMass;",
+          "line": 36,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"physiqueRating\"",
+          "declaration": "private final Integer physiqueRating;",
+          "line": 40,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"visceralFat\"",
+          "declaration": "private final Integer visceralFat;",
+          "line": 44,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"weight\"",
+          "declaration": "private final Double weight;",
+          "line": 48,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sourceType\"",
+          "declaration": "private String sourceType;",
+          "line": 52,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "l42.k",
+      "source": "health-stats/sources/l42.k.java",
+      "fields": [
+        {
+          "annotation": "\"dailyWeightSummaries\"",
+          "declaration": "private List<b> dailyWeightSummaries;",
+          "line": 20,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"previousDateWeight\"",
+          "declaration": "private c previousDateWeight;",
+          "line": 24,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"totalAverage\"",
+          "declaration": "private g totalAverage;",
+          "line": 28,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "o61.p",
+      "source": "health-stats/sources/o61.p.java",
+      "fields": [
+        {
+          "annotation": "\"userId\"",
+          "declaration": "private final long userId;",
+          "line": 14,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"generic\"",
+          "declaration": "private final q generic;",
+          "line": 18,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"cycling\"",
+          "declaration": "private final q cycling;",
+          "line": 22,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"rowing\"",
+          "declaration": "private final q rowing;",
+          "line": 26,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"heatAltitudeAcclimation\"",
+          "declaration": "private final x61.e heatAltitudeAcclimation;",
+          "line": 30,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "oz1.b",
+      "source": "health-stats/sources/oz1.b.java",
+      "fields": [
+        {
+          "annotation": "\"timestampLocal\"",
+          "declaration": "private final String timestampLocal;",
+          "line": 21,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"acuteLoad\"",
+          "declaration": "private final Integer acuteLoad;",
+          "line": 25,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"hrvWeeklyAverage\"",
+          "declaration": "private final Integer hrvWeeklyAverage;",
+          "line": 29,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"primaryActivityTracker\"",
+          "declaration": "private final Boolean primaryActivityTracker;",
+          "line": 33,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"minutesSinceLastDive\"",
+          "declaration": "private Integer minutesSinceLastDive;",
+          "line": 37,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"acwrFactorFeedback\"",
+          "declaration": "private final String acwrFactorFeedback;",
+          "line": 41,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"acwrFactorPercent\"",
+          "declaration": "private final Integer acwrFactorPercent;",
+          "line": 45,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private final String calendarDate;",
+          "line": 49,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"deviceId\"",
+          "declaration": "private final Long deviceId;",
+          "line": 53,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"feedbackLong\"",
+          "declaration": "private final String feedbackLong;",
+          "line": 57,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"feedbackShort\"",
+          "declaration": "private final String feedbackShort;",
+          "line": 61,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"hrvFactorFeedback\"",
+          "declaration": "private final String hrvFactorFeedback;",
+          "line": 65,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"hrvFactorPercent\"",
+          "declaration": "private final Integer hrvFactorPercent;",
+          "line": 69,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"inputContext\"",
+          "declaration": "private final String inputContext;",
+          "line": 73,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"level\"",
+          "declaration": "private final String level;",
+          "line": 77,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"recoveryTime\"",
+          "declaration": "private final Integer recoveryTime;",
+          "line": 81,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"recoveryTimeFactorFeedback\"",
+          "declaration": "private final String recoveryTimeFactorFeedback;",
+          "line": 85,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"recoveryTimeFactorPercent\"",
+          "declaration": "private final Integer recoveryTimeFactorPercent;",
+          "line": 89,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"score\"",
+          "declaration": "private final Float score;",
+          "line": 93,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepHistoryFactorFeedback\"",
+          "declaration": "private final String sleepHistoryFactorFeedback;",
+          "line": 97,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepHistoryFactorPercent\"",
+          "declaration": "private final Integer sleepHistoryFactorPercent;",
+          "line": 101,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepScore\"",
+          "declaration": "private final Integer sleepScore;",
+          "line": 105,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepScoreFactorFeedback\"",
+          "declaration": "private final String sleepScoreFactorFeedback;",
+          "line": 109,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sleepScoreFactorPercent\"",
+          "declaration": "private final Integer sleepScoreFactorPercent;",
+          "line": 113,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"stressHistoryFactorFeedback\"",
+          "declaration": "private final String stressHistoryFactorFeedback;",
+          "line": 117,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"stressHistoryFactorPercent\"",
+          "declaration": "private final Integer stressHistoryFactorPercent;",
+          "line": 121,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"timestamp\"",
+          "declaration": "private final String timestamp;",
+          "line": 125,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"userProfilePK\"",
+          "declaration": "private final Integer userProfilePK;",
+          "line": 129,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"validSleep\"",
+          "declaration": "private final Boolean validSleep;",
+          "line": 133,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "pw.a",
+      "source": "health-stats/sources/pw.a.java",
+      "fields": [
+        {
+          "annotation": "\"version\"",
+          "declaration": "private long version;",
+          "line": 25,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"systolic\"",
+          "declaration": "private Double systolic;",
+          "line": 29,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"diastolic\"",
+          "declaration": "private Double diastolic;",
+          "line": 33,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"pulse\"",
+          "declaration": "private Double pulse;",
+          "line": 37,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"multiMeasurement\"",
+          "declaration": "private Boolean multiMeasurement;",
+          "line": 41,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"notes\"",
+          "declaration": "private String notes;",
+          "line": 45,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"sourceType\"",
+          "declaration": "private String sourceType;",
+          "line": 49,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"measurementTimestampLocal\"",
+          "declaration": "private String measurementTimestampLocal;",
+          "line": 53,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"measurementTimestampGMT\"",
+          "declaration": "private String measurementTimestampGmt;",
+          "line": 57,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"categoryName\"",
+          "declaration": "private String categoryName;",
+          "line": 61,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "yw1.a",
+      "source": "health-stats/sources/yw1.a.java",
+      "fields": [
+        {
+          "name": "from",
+          "serializer_optional": false,
+          "line": 37,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "until",
+          "serializer_optional": false,
+          "line": 38,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "aggregatedResults",
+          "serializer_optional": false,
+          "line": 39,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "yw1.e",
+      "source": "health-stats/sources/yw1.e.java",
+      "fields": [
+        {
+          "name": "avgSpeed",
+          "serializer_optional": false,
+          "line": 39,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "avgPower",
+          "serializer_optional": false,
+          "line": 40,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "calories",
+          "serializer_optional": false,
+          "line": 41,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "distance",
+          "serializer_optional": false,
+          "line": 42,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "steps",
+          "serializer_optional": false,
+          "line": 43,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "duration",
+          "serializer_optional": false,
+          "line": 44,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "moderateIntensityMinutes",
+          "serializer_optional": false,
+          "line": 45,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "vigorousIntensityMinutes",
+          "serializer_optional": false,
+          "line": 46,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "movingDuration",
+          "serializer_optional": false,
+          "line": 47,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "totalSets",
+          "serializer_optional": false,
+          "line": 48,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "yw1.f",
+      "source": "health-stats/sources/yw1.f.java",
+      "fields": [
+        {
+          "name": "avg",
+          "serializer_optional": false,
+          "line": 36,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "count",
+          "serializer_optional": false,
+          "line": 37,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "max",
+          "serializer_optional": false,
+          "line": 38,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "min",
+          "serializer_optional": false,
+          "line": 39,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "sum",
+          "serializer_optional": false,
+          "line": 40,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "yw1.g",
+      "source": "health-stats/sources/yw1.g.java",
+      "fields": [
+        {
+          "name": "countOfActivities",
+          "serializer_optional": false,
+          "line": 37,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "date",
+          "serializer_optional": false,
+          "line": 38,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "stats",
+          "serializer_optional": false,
+          "line": 39,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "yw1.h",
+      "source": "health-stats/sources/yw1.h.java",
+      "fields": [
+        {
+          "name": "id",
+          "serializer_optional": false,
+          "line": 38,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "key",
+          "serializer_optional": false,
+          "line": 39,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "visible",
+          "serializer_optional": false,
+          "line": 40,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "sport",
+          "serializer_optional": false,
+          "line": 41,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "maxValue",
+          "serializer_optional": false,
+          "line": 42,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "minValue",
+          "serializer_optional": false,
+          "line": 43,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "yw1.i",
+      "source": "health-stats/sources/yw1.i.java",
+      "fields": [
+        {
+          "name": "typeId",
+          "serializer_optional": false,
+          "line": 45,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "activityId",
+          "serializer_optional": false,
+          "line": 46,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "activityName",
+          "serializer_optional": false,
+          "line": 47,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "activityType",
+          "serializer_optional": false,
+          "line": 48,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "value",
+          "serializer_optional": false,
+          "line": 49,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "status",
+          "serializer_optional": false,
+          "line": 50,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "prStartTimeGmt",
+          "serializer_optional": false,
+          "line": 51,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "activityStartDateTimeLocalFormatted",
+          "serializer_optional": false,
+          "line": 52,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "prStartTimeLocal",
+          "serializer_optional": false,
+          "line": 53,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "yw1.j",
+      "source": "health-stats/sources/yw1.j.java",
+      "fields": [
+        {
+          "name": "userId",
+          "serializer_optional": false,
+          "line": 33,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "generic",
+          "serializer_optional": false,
+          "line": 34,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "cycling",
+          "serializer_optional": false,
+          "line": 35,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "yw1.l",
+      "source": "health-stats/sources/yw1.l.java",
+      "fields": [
+        {
+          "name": "from",
+          "serializer_optional": false,
+          "line": 36,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "series",
+          "serializer_optional": false,
+          "line": 37,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "until",
+          "serializer_optional": false,
+          "line": 38,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "updatedDate",
+          "serializer_optional": false,
+          "line": 39,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "value",
+          "serializer_optional": false,
+          "line": 40,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    },
+    {
+      "class_raw": "yw1.s",
+      "source": "health-stats/sources/yw1.s.java",
+      "fields": [
+        {
+          "annotation": "\"calendarDate\"",
+          "declaration": "private final String calendarDate;",
+          "line": 14,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"exerciseSummaries\"",
+          "declaration": "private final List<t> exerciseSummaries;",
+          "line": 18,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "yw1.t",
+      "source": "health-stats/sources/yw1.t.java",
+      "fields": [
+        {
+          "annotation": "\"category\"",
+          "declaration": "private final String category;",
+          "line": 14,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"subCategory\"",
+          "declaration": "private final String subCategory;",
+          "line": 18,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"totalReps\"",
+          "declaration": "private final Integer totalReps;",
+          "line": 22,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"totalSets\"",
+          "declaration": "private final Integer totalSets;",
+          "line": 26,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"activeSets\"",
+          "declaration": "private final Integer activeSets;",
+          "line": 30,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"totalTimeInSeconds\"",
+          "declaration": "private final Double totalTimeInSeconds;",
+          "line": 34,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"totalVolume\"",
+          "declaration": "private final Double totalVolume;",
+          "line": 38,
+          "kind": "Gson wire name"
+        },
+        {
+          "annotation": "\"maxWeight\"",
+          "declaration": "private final Double maxWeight;",
+          "line": 42,
+          "kind": "Gson wire name"
+        }
+      ]
+    },
+    {
+      "class_raw": "yw1.v",
+      "source": "health-stats/sources/yw1.v.java",
+      "fields": [
+        {
+          "name": "calendarDate",
+          "serializer_optional": false,
+          "line": 34,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "vo2MaxValue",
+          "serializer_optional": false,
+          "line": 35,
+          "kind": "Kotlin serializer descriptor"
+        },
+        {
+          "name": "vo2MaxPreciseValue",
+          "serializer_optional": false,
+          "line": 36,
+          "kind": "Kotlin serializer descriptor"
+        }
+      ]
+    }
+  ],
+  "live_tested": false,
+  "credential_files_read": false
+}

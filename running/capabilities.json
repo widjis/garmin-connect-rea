@@ -1,0 +1,87 @@
+{
+  "sport": {
+    "sportTypeId": 1,
+    "sportTypeKey": "running"
+  },
+  "step_roles": {
+    "warmup": 1,
+    "run": 3,
+    "walk": 4,
+    "recovery": 4,
+    "rest": 5,
+    "cooldown": 2,
+    "other": 7
+  },
+  "end_conditions": {
+    "time": 2,
+    "distance": 3,
+    "lap": 1,
+    "calories": 4,
+    "heart_rate_threshold": 6
+  },
+  "primary_target_modes": {
+    "none": 1,
+    "pace_range": 6,
+    "cadence_range": 3,
+    "hr_zone": 4,
+    "hr_bpm_range": 4,
+    "power_zone": 2,
+    "power_watts_range": 2
+  },
+  "matrix_rows": 245,
+  "matrix_meaning": "Categorical research candidates, not accepted combinations. Numeric ranges, repeats, secondary targets and device constraints are separate axes.",
+  "structures": [
+    "linear",
+    "repeat_fixed_count",
+    "repeat_until_time",
+    "nested_repeat_candidate",
+    "skip_last_rest_candidate",
+    "smart_repeat_candidate"
+  ],
+  "secondary_target": {
+    "fields": [
+      "secondaryTargetType",
+      "secondaryTargetValueOne",
+      "secondaryTargetValueTwo",
+      "secondaryZoneNumber",
+      "secondaryTargetValueUnit"
+    ],
+    "status": "serializer_confirmed; specific running pairs and watch capability not verified"
+  },
+  "advanced_unverified": [
+    "hr_percent",
+    "power_percent_ftp",
+    "walk_effort_instruction",
+    "audio_notes",
+    "power_curve_for_running",
+    "sport_subtype_variants"
+  ],
+  "live_fixture": {
+    "structure": "one run step",
+    "end": "time",
+    "seconds": 1200,
+    "target": "none",
+    "created_and_read_back": true,
+    "watch_verified": false
+  },
+  "units": {
+    "time": "seconds",
+    "distance": "meters",
+    "pace_range": "speed in meters/second; lower is slower",
+    "hr_custom": "bpm candidate corroborated by client library",
+    "cadence": "steps/min candidate; device convention requires validation",
+    "power_custom": "watts candidate",
+    "zones": "athlete-specific zone indices, not generic bpm/watts"
+  },
+  "metadata_counts": {
+    "workoutStepTypes": 8,
+    "workoutSportTypes": 12,
+    "workoutConditionTypes": 24,
+    "workoutIntensityTypes": 4,
+    "workoutTargetTypes": 27,
+    "workoutEquipmentTypes": 5,
+    "workoutStrokeTypes": 10,
+    "workoutSwimInstructionTypes": 10,
+    "workoutDrillTypes": 3
+  }
+}

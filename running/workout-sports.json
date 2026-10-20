@@ -1,0 +1,62 @@
+[
+  {
+    "sportTypeId": 1,
+    "sportTypeKey": "running",
+    "displayOrder": 1
+  },
+  {
+    "sportTypeId": 2,
+    "sportTypeKey": "cycling",
+    "displayOrder": 2
+  },
+  {
+    "sportTypeId": 4,
+    "sportTypeKey": "swimming",
+    "displayOrder": 4
+  },
+  {
+    "sportTypeId": 5,
+    "sportTypeKey": "strength_training",
+    "displayOrder": 3
+  },
+  {
+    "sportTypeId": 6,
+    "sportTypeKey": "cardio_training",
+    "displayOrder": 6
+  },
+  {
+    "sportTypeId": 7,
+    "sportTypeKey": "yoga",
+    "displayOrder": 8
+  },
+  {
+    "sportTypeId": 8,
+    "sportTypeKey": "pilates",
+    "displayOrder": 9
+  },
+  {
+    "sportTypeId": 9,
+    "sportTypeKey": "hiit",
+    "displayOrder": 7
+  },
+  {
+    "sportTypeId": 3,
+    "sportTypeKey": "other",
+    "displayOrder": 13
+  },
+  {
+    "sportTypeId": 10,
+    "sportTypeKey": "multi_sport",
+    "displayOrder": 5
+  },
+  {
+    "sportTypeId": 11,
+    "sportTypeKey": "mobility",
+    "displayOrder": 10
+  },
+  {
+    "sportTypeId": 13,
+    "sportTypeKey": "rucking",
+    "displayOrder": 12
+  }
+]

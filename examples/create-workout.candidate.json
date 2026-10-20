@@ -1,0 +1,32 @@
+{
+  "workoutName": "REA - Easy Run 20 min",
+  "sportType": {
+    "sportTypeId": 1,
+    "sportTypeKey": "running"
+  },
+  "workoutSegments": [
+    {
+      "segmentOrder": 0,
+      "sportType": {
+        "sportTypeId": 1,
+        "sportTypeKey": "running"
+      },
+      "workoutSteps": [
+        {
+          "type": "ExecutableStepDTO",
+          "stepOrder": 1,
+          "stepType": {
+            "stepTypeId": 3
+          },
+          "endCondition": {
+            "conditionTypeId": 2
+          },
+          "endConditionValue": 1200.0,
+          "targetType": {
+            "workoutTargetTypeId": 1
+          }
+        }
+      ]
+    }
+  ]
+}

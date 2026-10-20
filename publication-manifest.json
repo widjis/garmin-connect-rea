@@ -1,0 +1,181 @@
+{
+  "purpose": "Reviewed sanitized publication allowlist; not a signature",
+  "files": {
+    ".gitignore": {
+      "sha256": "454546ba8bbc0eec3067da11bbcb1b34211deee46409fc825ce88f7ddfb92369",
+      "bytes": 372
+    },
+    "ANDROID-AUTH.md": {
+      "sha256": "017cc6ee0eba89495a1582cd20614f28b9d53dd52e6af01091b41992d37fa397",
+      "bytes": 5911
+    },
+    "HEALTH-STATS.md": {
+      "sha256": "d51dfbf2fc3ecf4e32833e28df0d9e417bf505d216b6eb11717fc0db0aa5f2e1",
+      "bytes": 20894
+    },
+    "LIVE-TEST.md": {
+      "sha256": "e17d00f8fd8ee64f1cb7cfe6350f260a7e5330be2cfd522d1621548d86a92ec8",
+      "bytes": 950
+    },
+    "PUBLICATION.md": {
+      "sha256": "a13d32bc562d7a5d90ca93998307dd0256dc6ceb9fad1483c7fa95e20024048f",
+      "bytes": 5297
+    },
+    "README.md": {
+      "sha256": "700cabc27a15bc86289579ff25736aaf58300e5467cdc5162a276373d4d1d757",
+      "bytes": 4387
+    },
+    "activity-analysis/README.md": {
+      "sha256": "12b69836c8334c60589eb0de65cc2dc204c406e8b395140f65257de3a0acecb9",
+      "bytes": 823
+    },
+    "calendar/CALENDAR-SCHEDULING.md": {
+      "sha256": "e85a9dbbca811afe0b400a8e3de18b82a23fc17afbaa6730826d07a0411a3d28",
+      "bytes": 3316
+    },
+    "examples/create-workout.candidate.json": {
+      "sha256": "a8321d5148573298c7520029faca04aa7914761da61556cd307682ab624a90ef",
+      "bytes": 644
+    },
+    "examples/send-workout.template.json": {
+      "sha256": "1cb0e02c900f7cee41c053100bc5aa760fb7222b7ea4ff8e64b37ef5d92d928d",
+      "bytes": 228
+    },
+    "health-stats/ENDPOINTS.md": {
+      "sha256": "9b69e01d98f63cbffcea5ef0d742a35ad9f670b3ca780f559876bf41480b9d85",
+      "bytes": 15393
+    },
+    "health-stats/HealthExtract.java": {
+      "sha256": "520f61ee11c91d8bdb415b868bf6f8374ce933351024b68d13c8a5a684d55d2c",
+      "bytes": 1043
+    },
+    "health-stats/LIVE-TEST.md": {
+      "sha256": "143423df21d2a58154c5216439eb181dcb78cfad681808c8ba6a1fd574d39023",
+      "bytes": 1149
+    },
+    "health-stats/MODELS.md": {
+      "sha256": "a880034616b5cc3b4bf5c5ecf8be29ce375f129039750249db80b9cf9e4d5451",
+      "bytes": 34473
+    },
+    "health-stats/build_catalog.py": {
+      "sha256": "cf3735bf91433e691ef82379f46aebe92f44d7aa60f6ef06b69fbf58471773ad",
+      "bytes": 4853
+    },
+    "health-stats/live_daily_test.py": {
+      "sha256": "f5c88488b6841564aa514ffbae897d7033b0fd59e6b519e15c37e37678cd2288",
+      "bytes": 5933
+    },
+    "health-stats/manifest.json": {
+      "sha256": "fbada21da37c68683296d38a20ca0f5bdc12d5e4c5dd56d2592f89d92ecf0ed8",
+      "bytes": 121700
+    },
+    "health-stats/plan.py": {
+      "sha256": "6225dd60bb1a2178d414e014f36d814bf0c54e237c8cae96b35bdd5017833491",
+      "bytes": 987
+    },
+    "health-stats/rea_probe.py": {
+      "sha256": "72945ca15b1d04de5880eff4e2d75778e391dedabf4ac5149bd0076696188735",
+      "bytes": 1409
+    },
+    "health-stats/verify.py": {
+      "sha256": "0029935185c314cdf562233ba6913ed8e6d6c34fa4036548488f472483916a7d",
+      "bytes": 2532
+    },
+    "health-stats/verify_offline.py": {
+      "sha256": "c52774aa7dd4e474ad15c4fcd85eead11704a7049ffdfa2ad641e04a4fc65da4",
+      "bytes": 1655
+    },
+    "requirements-live.lock.txt": {
+      "sha256": "b19adab0dd2cc3eb0f5325a4b9c95832d1a8961440c73e69fd0fe6633d18e2e8",
+      "bytes": 251
+    },
+    "requirements-live.txt": {
+      "sha256": "81a13ef9ee83073bf3521831c73465cc0184539bd5bd75179e5f7a5b862cfc8e",
+      "bytes": 59
+    },
+    "running/AI-COACH-BRIEF.md": {
+      "sha256": "b15e3f2b883d97bdac35e0e2a02d09795930af5673a090a7037c789e24f1e5c6",
+      "bytes": 7646
+    },
+    "running/RUNNING-CAPABILITIES.md": {
+      "sha256": "47682c69ec3e4196f7937886b14880cf9668c3b01f30a2bfeea1f7e1dbae7abe",
+      "bytes": 10453
+    },
+    "running/capabilities.json": {
+      "sha256": "f34f6d1e663e3e08aaa9e602c081dfe0adfcc23c31968c07ea88c1c3fa9bb625",
+      "bytes": 2242
+    },
+    "running/coach-intent-examples.json": {
+      "sha256": "5dbc268e9c94042994eb0a8b6b3e37a15fc2e26b5db7cdfd725b0b478d6487e8",
+      "bytes": 9318
+    },
+    "running/combination-matrix.csv": {
+      "sha256": "896b2886cdb58ae42f5a08eb443ce67387c37aca6dda02a9ee0f522fd9244e8e",
+      "bytes": 27459
+    },
+    "running/pace-conversion-example.json": {
+      "sha256": "9dc3f7fe6191b4d42d0a3b31f832abe866a2b493fbd1f87bf1c069974b561bc4",
+      "bytes": 333
+    },
+    "running/workout-sports.json": {
+      "sha256": "790f827d48f7c36eede6285a35b924deec3c0ab37e6c3fd088d4ca66f50c6d43",
+      "bytes": 1033
+    },
+    "running/workout-types.json": {
+      "sha256": "ea3f8974e2734ebc1bf8b91c00f46dd8a47245ccb2bf7cb7be35e5fdbbc942ec",
+      "bytes": 11846
+    },
+    "strength/STRENGTH-CAPABILITIES.md": {
+      "sha256": "c316c9a85501a87d9c7ee65ad1f5ab42b14e5f3fbc65037683a52d6f8ee22396",
+      "bytes": 1703
+    },
+    "tools/Extract.java": {
+      "sha256": "7845bfc1ee67b1fc31b36f152764f1b4e74aea7b0c2d2104bf3502243ae387f7",
+      "bytes": 709
+    },
+    "tools/Smali.java": {
+      "sha256": "1ff0186a46b1cd0fc3e5ff22d2e95479690343d592c3bbcc75b552fd7f084bd9",
+      "bytes": 892
+    },
+    "tools/Trace.java": {
+      "sha256": "378d5acce3f83f939157c1b8ae852438e6cadc408fc4a105d290a0b5dac6042e",
+      "bytes": 890
+    },
+    "tools/android_portal_create.py": {
+      "sha256": "5c9de53e4fbca187f42a58c243c5e34a032076504fbd28607ff67891a3b88911",
+      "bytes": 8521
+    },
+    "tools/build_running_catalog.py": {
+      "sha256": "731b01af708029745cf79232af97cd1151b3c287122846333eccdc102b24b9b5",
+      "bytes": 5201
+    },
+    "tools/dex_annotations.py": {
+      "sha256": "2fd62b98b445f44b0f87929a23b19cbe0b86cb156924593a202b4d53317e80f2",
+      "bytes": 1920
+    },
+    "tools/dex_auth_refs.py": {
+      "sha256": "9ac76837f65903e313109081e78bfb49b36e4ef2a5284f6a199dfb8937f452ff",
+      "bytes": 1791
+    },
+    "tools/dex_http.py": {
+      "sha256": "f16b67ce893885e614f7d686124b536b803c0649801c768719cd302103af49ba",
+      "bytes": 1961
+    },
+    "tools/dex_strings.py": {
+      "sha256": "750fe2cb1e7fc85ae93b5909dd0df57dccf39dc41e8fe9c2a6776aef45121691",
+      "bytes": 766
+    },
+    "tools/live_create.py": {
+      "sha256": "357be561a231edfec777f0fa5411140924481617a89cb33d834df95835e6b3a9",
+      "bytes": 6790
+    },
+    "tools/publication_check.py": {
+      "sha256": "8dce30af71d6b1b41095702e258d8a136b7fba54ffb7c9efde3a90d6eb18144c",
+      "bytes": 2853
+    },
+    "tools/read_running_metadata.py": {
+      "sha256": "6cadc3d77bc7026ae76523c24ee183a51bea32283c5b02c675779eca3c6c9d5e",
+      "bytes": 955
+    }
+  }
+}
